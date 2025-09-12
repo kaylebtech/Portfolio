@@ -8,8 +8,6 @@
   <meta name="author" content="Oyindamola Caleb Abisoye" />
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="kaytech.css">
-
-
 </head>
 <body>
   <div class="wrap" role="main">
@@ -19,6 +17,7 @@
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#screenshots">Screenshots</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -26,14 +25,13 @@
       </nav>
     </header>
 
-    <!-- HERO (expanded intro as you requested) -->
+    <!-- HERO (expanded intro) -->
     <main class="hero" id="home">
       <div>
         <div class="intro">
           <small>Hey, I’m</small>
           <h1>Oyindamola <strong>Caleb</strong> Abisoye</h1>
 
-          <!-- <-- Full, confident intro copy -->
           <p class="lead">
             I’m a Software Engineering student and Mobile Developer focused on building clean, accessible mobile interfaces with <strong>React Native</strong> and <strong>Expo</strong>. 
             I turn designs into reusable components and ship small, useful features fast. I also create short, practical content that shows how I solve real problems while learning.
@@ -64,7 +62,7 @@
       </aside>
     </main>
 
-    <!-- ABOUT (includes content creator note) -->
+    <!-- ABOUT (includes content creator note + social links for content) -->
     <section id="about" class="card" aria-labelledby="about-heading">
       <h2 id="about-heading">About me</h2>
       <p class="muted">
@@ -73,6 +71,12 @@
 
       <p class="muted" style="margin-top:8px">
         I’m also a content creator: I make short tutorials, debugging clips, and progress updates that document my learning. Posting what I build helps me learn faster and connect with other devs.
+        You can find my content here:
+        <span style="display:block;margin-top:8px">
+          <a href="https://instagram.com/kaylebtech.io" target="_blank" rel="noopener" style="color:var(--accent)">Instagram</a> ·
+          <a href="https://www.tiktok.com/kaylebtech.io" target="_blank" rel="noopener" style="color:var(--accent)">TikTok</a> ·
+          <a href="https://www.facebook.com/share/1FXv1kiFUV/?mibextid=wwXIfr" target="_blank" rel="noopener" style="color:var(--accent)">Facebook</a>
+        </span>
       </p>
 
       <h3 style="margin-top:12px">Skills</h3>
@@ -86,26 +90,36 @@
       </div>
     </section>
 
+    <!-- RESUME -->
+    <section id="resume" class="resume card">
+      <h2>Resume</h2>
+      <p class="muted">
+        Here’s my latest resume highlighting my journey as a Software Engineering student, my skills in mobile development, web development, and content creation.  
+        Feel free to download it below 👇
+      </p>
+      <!-- put your resume file at assets/Caleb-Abisoye-CV.pdf -->
+      <a href="Caleb-Abisoye-CV.jpg" download class="btn" style="margin-top:10px;display:inline-block">Download Resume</a>
+    </section>
+
     <!-- PROJECTS -->
     <section id="projects" class="card" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
       <p class="muted">A few projects I’ve built while learning — links point to code or demos where available.</p>
 
       <ul style="margin-top:12px">
-        <li><strong>PlantShop Auth UI</strong> — Reusable inputs, AuthButton, AuthCheckBox & routing (React Native / Expo). <a href="https://github.com/kaylebtech/PlantSHOP-clone" style="color:var(--accent)">Repo</a></li>
-        <li><strong>Facebook Login Clone</strong> — Practice with layouts, cross-platform fixes and navigation. <a href="https://github.com/kaylebtech/facebook-login-clone" style="color:var(--accent)">Repo</a></li>
-        <li><strong>Temperature Converter</strong> — JS utility functions for Celsius / Fahrenheit / Kelvin. <a href="https://github.com/kaylebtech/temperatureConverter" style="color:var(--accent)">Repo</a></li>
+        <li><strong>PlantShop Auth UI</strong> — Reusable inputs, AuthButton, AuthCheckBox & routing (React Native / Expo). <a href="https://github.com/kaylebtech/PlantSHOP-clone" target="_blank" rel="noopener" style="color:var(--accent)">Repo</a></li>
+        <li><strong>Facebook Login Clone</strong> — Practice with layouts, cross-platform fixes and navigation. <a href="https://github.com/kaylebtech/facebook-login-clone" target="_blank" rel="noopener" style="color:var(--accent)">Repo</a></li>
+        <li><strong>Temperature Converter</strong> — JS utility functions for Celsius / Fahrenheit / Kelvin. <a href="https://github.com/kaylebtech/temperatureConverter" target="_blank" rel="noopener" style="color:var(--accent)">Repo</a></li>
       </ul>
     </section>
 
-    <!-- SCREENSHOTS GALLERY (new section) -->
+    <!-- SCREENSHOTS GALLERY -->
     <section id="screenshots" class="card" aria-labelledby="screenshots-heading">
       <h2 id="screenshots-heading">Recent Mobile Interfaces</h2>
-      <p class="muted">Screenshots of recent sign-in / sign-up and UI experiments. Click any image to view fullscreen.</p>
+      <p class="muted">Screenshots of recent sign-in / sign-up and UI experiments. Click any image to view fullscreen (same tab).</p>
 
-      <!-- gallery: place your images in the same folder and update filenames -->
       <div class="gallery-grid" style="margin-top:12px">
-        <!-- Replace the href/src values with your actual screenshot filenames -->
+        <!-- Make sure these filenames exist in your site folder -->
         <a class="thumb-wrap" href="splash.jpg">
           <img src="splash.jpg" alt="PlantShop splash screen" class="thumb" />
         </a>
@@ -115,23 +129,21 @@
         </a>
 
         <a class="thumb-wrap" href="sign-up.jpg">
-          <img src="sign-up.jpg" alt="sign-up screen" class="thumb" />
+          <img src="sign-up.jpg" alt="Sign-up screen" class="thumb" />
         </a>
 
-        <a class="thumb-wrap" href="facebbook-clone.jpg">
-          <img src="facebbook-clone.jpg" alt="facebook-clone screen" class="thumb" />
+        <a class="thumb-wrap" href="facebook-clone.jpg">
+          <img src="facebook-clone.jpg" alt="Facebook clone screen" class="thumb" />
         </a>
-
-        <!-- add more as needed -->
       </div>
 
-      <p class="muted" style="margin-top:10px;font-size:13px">Tip: use -thumb thumbnails (e.g., <code>shot1-thumb.jpg</code>) for faster loading and link to the full-size image (e.g., <code>shot1.jpg</code>).</p>
+      <p class="muted" style="margin-top:10px;font-size:13px">Tip: use thumbnails (e.g., <code>sign-in-thumb.jpg</code>) to speed up loading and link to the full-size image.</p>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="card">
       <h2>Contact</h2>
-      <p class="muted">Email: <a href="mailto:abisoyeoyindamola2006@gmail.com" style="color:var(--accent)">abisoyeoyindamola2006@gmail.com</a></p>
+      <p class="muted">Email: <a href="mailto:kaylebtech@gmail.com" style="color:var(--accent)">kaylebtech@gmail.com</a></p>
       <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/oyindamola-abisoye-a12269333" target="_blank" rel="noopener" style="color:var(--accent)">Oyindamola Abisoye</a></p>
       <p class="muted">GitHub: <a href="https://github.com/kaylebtech" target="_blank" rel="noopener" style="color:var(--accent)">kaylebtech</a></p>
       <p class="muted">WhatsApp: <a href="https://wa.me/2349133867929" target="_blank" rel="noopener" style="color:var(--accent)">Chat with me on WhatsApp</a></p>
@@ -143,6 +155,7 @@
   </div>
 
   <script>
+    // update year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
