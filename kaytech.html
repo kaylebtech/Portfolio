@@ -7,9 +7,90 @@
   <meta name="description" content="Oyindamola (Caleb) — Software Engineering student and mobile developer. Building React Native apps, creating tech content, and learning in public." />
   <meta name="author" content="Oyindamola Caleb Abisoye" />
   <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="kaytech.css" >
 
+  <style>
+    :root{
+      --bg:#071019;
+      --card:#111419;
+      --muted:#9aa4ae;
+      --accent:#f59e0b;
+      --text:#e6eef6;
+      --container:1100px;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#071019 0%, var(--bg) 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
 
+    .wrap{max-width:var(--container);margin:0 auto;padding:28px}
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:18px 0;
+    }
+    .brand{font-weight:800;letter-spacing:0.6px}
+    .brand span{color:var(--accent)}
+    nav ul{display:flex;gap:18px;margin:0;padding:0;list-style:none}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:14px}
+    nav a:hover{color:var(--text)}
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 360px;
+      gap:28px;
+      align-items:center;
+      margin-top:18px;
+    }
+    .hero .intro small{color:var(--muted);display:block;margin-bottom:8px}
+    h1{font-size:40px;margin:6px 0}
+    p.lead{color:var(--muted);max-width:64ch}
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      padding:18px;
+      border-radius:var(--radius);
+    }
+    .portrait{width:100%;height:360px;border-radius:10px;object-fit:cover;border:1px solid rgba(255,255,255,0.04)}
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#071019;font-weight:700;text-decoration:none}
+
+    section{margin-top:22px}
+    h2{font-size:22px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);display:flex;justify-content:space-between;align-items:center}
+
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .service{padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+    /* gallery */
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .thumb{width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,0.03);display:block}
+    .thumb-wrap{overflow:hidden;border-radius:10px}
+
+    footer{margin-top:36px;padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .portrait{height:260px}
+    }
+    @media (max-width:560px){
+      nav ul{display:none}
+      h1{font-size:28px}
+    }
+  </style>
 </head>
 <body>
   <div class="wrap" role="main">
@@ -131,10 +212,9 @@
     <!-- CONTACT -->
     <section id="contact" class="card">
       <h2>Contact</h2>
-      <p class="muted">Email: <a href="mailto:kaylebtech@gmail.com" style="color:var(--accent)">abisoyeoyindamola2006@gmail.com</a></p>
+      <p class="muted">Email: <a href="mailto:abisoyeoyindamola2006@gmail.com" style="color:var(--accent)">abisoyeoyindamola2006@gmail.com</a></p>
       <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/oyindamola-abisoye-a12269333" target="_blank" rel="noopener" style="color:var(--accent)">Oyindamola Abisoye</a></p>
       <p class="muted">GitHub: <a href="https://github.com/kaylebtech" target="_blank" rel="noopener" style="color:var(--accent)">kaylebtech</a></p>
-      <p class="muted">Whatsapp: <a href="https://wa.me/2349133867929" target="_blank" rel="noopener" style="color:var(--accent)">Send a DM on Whatsapp</p>
     </section>
 
     <footer>
