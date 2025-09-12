@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Caleb • Mobile Developer (React Native / Expo)</title>
+  <meta name="description" content="Oyindamola (Caleb) — Software Engineering student and mobile developer. Building React Native apps, creating tech content, and learning in public." />
+  <meta name="author" content="Oyindamola Caleb Abisoye" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="kaytech.css" >
+
+
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="brand">Kayleb<span>.tech</span></div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO (expanded intro as you requested) -->
+    <main class="hero" id="home">
+      <div>
+        <div class="intro">
+          <small>Hey, I’m</small>
+          <h1>Oyindamola <strong>Caleb</strong> Abisoye</h1>
+
+          <!-- <-- Full, confident intro copy -->
+          <p class="lead">
+            I’m a Software Engineering student and Mobile Developer focused on building clean, accessible mobile interfaces with <strong>React Native</strong> and <strong>Expo</strong>. 
+            I turn designs into reusable components and ship small, useful features fast. I also create short, practical content that shows how I solve real problems while learning.
+            This site highlights my projects, UI experiments, and the recent mobile interfaces I built — feel free to explore and reach out.
+          </p>
+
+          <div style="margin-top:14px">
+            <a class="cta" href="#projects">See projects</a>
+            <a class="cta" href="mailto:abisoyeoyindamola2006@gmail.com" style="background:transparent;color:var(--text);margin-left:8px;border:1px solid rgba(255,255,255,0.04)">Email me</a>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+          <div class="card" style="padding:10px 12px;border-radius:10px;font-size:13px"><strong>Experience</strong><div class="muted">Less than a year — building daily</div></div>
+          <div class="card" style="padding:10px 12px;border-radius:10px;font-size:13px"><strong>Focus</strong><div class="muted">React Native, Expo, UI</div></div>
+          <div class="card" style="padding:10px 12px;border-radius:10px;font-size:13px"><strong>Also</strong><div class="muted">Content creator — quick demos & tutorials</div></div>
+        </div>
+      </div>
+
+      <aside class="card" aria-label="Portrait">
+        <!-- replace me.jpg with your portrait -->
+        <img src="me.jpg" alt="Portrait of Caleb" class="portrait" />
+        <div style="display:flex;gap:8px;justify-content:space-between;margin-top:12px">
+          <a href="https://github.com/kaylebtech" target="_blank" rel="noopener" class="muted">GitHub</a>
+          <a href="https://x.com/kayleb40547" target="_blank" rel="noopener" class="muted">X / Twitter</a>
+          <a href="https://www.linkedin.com/in/oyindamola-abisoye-a12269333" target="_blank" rel="noopener" class="muted">LinkedIn</a>
+        </div>
+      </aside>
+    </main>
+
+    <!-- ABOUT (includes content creator note) -->
+    <section id="about" class="card" aria-labelledby="about-heading">
+      <h2 id="about-heading">About me</h2>
+      <p class="muted">
+        I’m a Software Engineering student building mobile apps and UI components with React Native & Expo. I enjoy turning designs into reusable components — inputs, buttons, auth flows — and iterating quickly using feedback.
+      </p>
+
+      <p class="muted" style="margin-top:8px">
+        I’m also a content creator: I make short tutorials, debugging clips, and progress updates that document my learning. Posting what I build helps me learn faster and connect with other devs.
+      </p>
+
+      <h3 style="margin-top:12px">Skills</h3>
+      <div class="skills" aria-hidden="false">
+        <div class="skill"><span>React / React Native</span><strong>4/5</strong></div>
+        <div class="skill"><span>JavaScript</span><strong>4/5</strong></div>
+        <div class="skill"><span>HTML & CSS</span><strong>4/5</strong></div>
+        <div class="skill"><span>Expo</span><strong>3/5</strong></div>
+        <div class="skill"><span>APIs & Integrations</span><strong>Learning</strong></div>
+        <div class="skill"><span>Git & GitHub</span><strong>3/5</strong></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <p class="muted">A few projects I’ve built while learning — links point to code or demos where available.</p>
+
+      <ul style="margin-top:12px">
+        <li><strong>PlantShop Auth UI</strong> — Reusable inputs, AuthButton, AuthCheckBox & routing (React Native / Expo). <a href="https://github.com/kaylebtech/PlantSHOP-clone" style="color:var(--accent)">Repo</a></li>
+        <li><strong>Facebook Login Clone</strong> — Practice with layouts, cross-platform fixes and navigation. <a href="https://github.com/kaylebtech/facebook-login-clone" style="color:var(--accent)">Repo</a></li>
+        <li><strong>Temperature Converter</strong> — JS utility functions for Celsius / Fahrenheit / Kelvin. <a href="https://github.com/kaylebtech/temperatureConverter" style="color:var(--accent)">Repo</a></li>
+      </ul>
+    </section>
+
+    <!-- SCREENSHOTS GALLERY (new section) -->
+    <section id="screenshots" class="card" aria-labelledby="screenshots-heading">
+      <h2 id="screenshots-heading">Recent Mobile Interfaces</h2>
+      <p class="muted">Screenshots of recent sign-in / sign-up and UI experiments. Click any image to view fullscreen.</p>
+
+      <!-- gallery: place your images in the same folder and update filenames -->
+      <div class="gallery-grid" style="margin-top:12px">
+        <!-- Replace the href/src values with your actual screenshot filenames -->
+        <a class="thumb-wrap" href="sign-in.jpg" target="_blank" rel="noopener">
+          <img src="sign-in.jpg" alt="PlantShop sign-in screen" class="thumb" />
+        </a>
+
+        <a class="thumb-wrap" href="sign-up.jpg" target="_blank" rel="noopener">
+          <img src="sign-up.jpg" alt="Sign-up flow" class="thumb" />
+        </a>
+
+        <a class="thumb-wrap" href="shot3.jpg" target="_blank" rel="noopener">
+          <img src="shot3-thumb.jpg" alt="Settings screen" class="thumb" />
+        </a>
+
+        <a class="thumb-wrap" href="shot4.jpg" target="_blank" rel="noopener">
+          <img src="shot4-thumb.jpg" alt="Profile screen" class="thumb" />
+        </a>
+
+        <!-- add more as needed -->
+      </div>
+
+      <p class="muted" style="margin-top:10px;font-size:13px">Tip: use -thumb thumbnails (e.g., <code>shot1-thumb.jpg</code>) for faster loading and link to the full-size image (e.g., <code>shot1.jpg</code>).</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:kaylebtech@gmail.com" style="color:var(--accent)">abisoyeoyindamola2006@gmail.com</a></p>
+      <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/oyindamola-abisoye-a12269333" target="_blank" rel="noopener" style="color:var(--accent)">Oyindamola Abisoye</a></p>
+      <p class="muted">GitHub: <a href="https://github.com/kaylebtech" target="_blank" rel="noopener" style="color:var(--accent)">kaylebtech</a></p>
+      <p class="muted">Whatsapp: <a href="https://wa.me/2349133867929" target="_blank" rel="noopener" style="color:var(--accent)">Send a DM on Whatsapp</p>
+    </section>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> Caleb • Built with ❤ — learning in public.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
